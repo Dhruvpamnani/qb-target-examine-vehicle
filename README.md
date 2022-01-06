@@ -4,7 +4,7 @@
 
 Dependencies
 1. qb-mechanicjob
-2. nh-context
+2. qb-menu
 3. qb-target
 
 Add this at the very bottom of your qb-mechanicjob > client > main.lua
