@@ -18,7 +18,7 @@ AddEventHandler('CheckVehStatus', function()
     bodyHealth = GetVehicleBodyHealth(veh)
     fuelHealth = exports['LegacyFuel']:GetFuel(veh)
     tankHealth = GetVehiclePetrolTankHealth(veh)
-    TriggerEvent('nh-context:sendMenu', {
+    exports['qb-menu']:openMenu({
         {
             id = 1,
             header = "<  Go back",
