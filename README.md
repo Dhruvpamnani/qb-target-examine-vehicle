@@ -31,27 +31,42 @@ AddEventHandler('CheckVehStatus', function()
             id = 2,
             header = "Fuel Level",
             txt = "Status: " .. round(fuelHealth) .. ".0% / 100.0%",
+            params = {
+                event = "nh-context:closeMenu"
+            }
         },
         {
             id = 3,
             header = "Engine Health",
             txt = "Status: " .. round(engineHealth) / 10 .. "% / 100.0%",
+            params = {
+                event = "nh-context:closeMenu"
+            }
         },
         {
             id = 4,
             header = "Body Health",
             txt = "Status: " .. round(bodyHealth) / 10 .. "% / 100.0%",
+            params = {
+                event = "nh-context:closeMenu"
+            }
         },
         {
             id = 5,
             header = "Tank Health",
             txt = "Status: " .. round(tankHealth) / 10 .. "% / 100.0%",
+            params = {
+                event = "nh-context:closeMenu"
+            }
         },
         {
             id = 6,
             header = "Engine Temperature",
             txt = "Status: " .. round(vehTemp) .. "° C",
-        },        
+            params = {
+                event = "nh-context:closeMenu"
+            }
+        },
     })
 end)
 ```
